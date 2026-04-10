@@ -23,7 +23,7 @@ function renderSkills(items) {
 
     const hasUrl = item.url && item.url.trim() !== '';
     const urlLine = hasUrl
-      ? `<a href="${item.url}" class="skill-url-text" target="_blank" rel="noopener">课程链接</a>`
+      ? `<a href="${item.url}" class="skill-url-text" target="_blank" rel="noopener">课程链接（点击）</a>`
       : '';
 
     return `<li class="skill-entry">

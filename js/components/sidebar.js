@@ -13,12 +13,18 @@ export function renderSidebar(profile) {
 }
 
 function renderSkills(items) {
-  const rows = items.map(item => `<li>${item}</li>`).join('');
+  const rows = items.map(item => {
+    const hasUrl = item.url && item.url.trim() !== '';
+    const link = hasUrl
+      ? `<a href="${item.url}" class="skill-url" target="_blank" rel="noopener">↗</a>`
+      : '';
+    return `<li class="skill-entry"><span>${item.name}</span>${link}</li>`;
+  }).join('');
 
   return `
     <section class="card" id="skills">
       <h2 class="section-title">学习经历</h2>
-      <ul class="tag-list">${rows}</ul>
+      <ul class="skill-entry-list">${rows}</ul>
     </section>
   `;
 }

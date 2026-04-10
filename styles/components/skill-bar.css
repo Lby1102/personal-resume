@@ -26,6 +26,11 @@
   color: var(--color-ink);
 }
 
+.skill-entry-desc {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
 .skill-url-text {
   font-size: var(--text-xs);
   color: var(--color-muted);

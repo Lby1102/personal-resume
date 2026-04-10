@@ -1,48 +1,44 @@
 /* ================================================
-   Design Tokens — Nobel Prize style
-   Navy #003d8f  ×  Gold #c9a640
+   Design Tokens — Nobel minimal (white + restrained gold)
 ================================================ */
 :root {
-  /* Brand */
-  --color-navy:        #003d8f;
-  --color-navy-dark:   #00276b;
-  --color-navy-deep:   #001a4d;
-  --color-gold:        #c9a640;
-  --color-gold-light:  #f5e9c4;
+  /* Gold used in at most 2–3 places */
+  --color-gold:   #b8922a;
 
-  /* Aliases used by components */
-  --color-primary:       var(--color-navy);
-  --color-primary-light: var(--color-gold-light);
-  --color-primary-dark:  var(--color-navy-dark);
-  --color-accent:        var(--color-gold);
-
-  /* Neutrals */
+  /* Everything else is near-black / gray / white */
+  --color-ink:    #111111;
   --color-text:   #1a1a1a;
-  --color-muted:  #6b6b6b;
-  --color-border: #d9d3c7;
-  --color-bg:     #f5f3ef;   /* warm off-white, like Nobel's page bg */
+  --color-muted:  #888888;
+  --color-rule:   #e0ddd8;   /* hairline dividers */
+  --color-bg:     #ffffff;
   --color-card:   #ffffff;
 
-  /* Spacing scale */
+  /* Aliases — kept so component files don't break */
+  --color-primary:       var(--color-ink);
+  --color-primary-light: #f3f0eb;
+  --color-primary-dark:  #000000;
+  --color-accent:        var(--color-gold);
+  --color-border:        var(--color-rule);
+
+  /* Spacing */
   --space-xs:  4px;
   --space-sm:  8px;
   --space-md:  16px;
   --space-lg:  24px;
-  --space-xl:  32px;
-  --space-2xl: 48px;
-  --space-3xl: 64px;
+  --space-xl:  36px;
+  --space-2xl: 56px;
+  --space-3xl: 72px;
 
   /* Typography */
-  --font-serif: "Libre Baskerville", "Georgia", "Times New Roman", serif;
+  --font-serif: "Libre Baskerville", "Georgia", serif;
   --font-sans:  "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
   --text-xs:   .72rem;
-  --text-sm:   .85rem;
-  --text-base: .97rem;
+  --text-sm:   .84rem;
+  --text-base: .96rem;
   --text-lg:   1.1rem;
-  --text-xl:   1.35rem;
-  --text-2xl:  2.4rem;
+  --text-xl:   1.4rem;
+  --text-2xl:  2.6rem;
 
-  /* Surfaces — sharp corners, formal */
-  --radius: 0px;
-  --shadow: 0 2px 8px rgba(0, 0, 0, .10);
+  --radius: 0;
+  --shadow: none;
 }

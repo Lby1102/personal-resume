@@ -3,11 +3,7 @@
 ================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
@@ -15,23 +11,12 @@ body {
   font-family: var(--font-sans);
   background: var(--color-bg);
   color: var(--color-text);
-  line-height: 1.75;
+  line-height: 1.8;
   font-size: 15px;
 }
 
-/* Top gold accent bar — signature Nobel touch */
-body::before {
-  content: '';
-  display: block;
-  height: 5px;
-  background: var(--color-gold);
-}
-
 ul  { list-style: none; }
-
-a   { color: var(--color-navy); text-decoration: none; }
+a   { color: var(--color-ink); text-decoration: none; }
 a:hover { text-decoration: underline; }
-
 h1, h2, h3 { font-family: var(--font-serif); }
-
 p { font-size: var(--text-base); }

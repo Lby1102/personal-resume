@@ -1,20 +1,18 @@
 /* ================================================
-   Component: Tags & Lists
+   Component: Tags & Lists — no color chips
 ================================================ */
 
-/* Interest chips — navy + gold border, sharp corners */
+/* Interest tags: plain text with thin border */
 .tag-row { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 
 .tag {
-  background: transparent;
-  color: var(--color-navy);
-  border: 1px solid var(--color-gold);
-  border-radius: 0;
-  padding: 4px 14px;
   font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: .5px;
+  color: var(--color-muted);
+  border: 1px solid var(--color-rule);
+  padding: 3px 12px;
+  letter-spacing: .6px;
   text-transform: uppercase;
+  background: transparent;
 }
 
 /* Language list */
@@ -23,15 +21,4 @@
 .tag-list li {
   font-size: var(--text-sm);
   color: var(--color-text);
-  padding-left: 12px;
-  position: relative;
-}
-
-.tag-list li::before {
-  content: '—';
-  position: absolute;
-  left: 0;
-  color: var(--color-gold);
-  font-size: .7rem;
-  top: 2px;
 }

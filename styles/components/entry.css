@@ -17,14 +17,13 @@
   font-family: var(--font-serif);
   font-weight: 700;
   font-size: var(--text-base);
-  color: var(--color-navy);
+  color: var(--color-ink);
 }
 
 .entry-date {
   font-size: var(--text-xs);
-  color: var(--color-gold);
-  font-weight: 600;
-  letter-spacing: .4px;
+  color: var(--color-muted);
+  letter-spacing: .3px;
   white-space: nowrap;
 }
 
@@ -36,12 +35,12 @@
 
 .entry-desc {
   margin-top: var(--space-sm);
-  padding-left: 1.1em;
+  padding-left: 1em;
   list-style: disc;
 }
 
 .entry-desc li {
   font-size: var(--text-sm);
-  color: #333;
+  color: #444;
   margin-bottom: var(--space-xs);
 }

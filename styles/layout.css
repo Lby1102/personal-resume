@@ -1,16 +1,15 @@
 /* ================================================
    Page Layout
 ================================================ */
-
 .container {
-  max-width: 980px;
+  max-width: 960px;
   margin: 0 auto;
-  padding: 0 24px;
+  padding: 0 32px;
 }
 
 .main-grid {
   display: grid;
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 260px 1fr;
   gap: var(--space-xl);
   margin-top: var(--space-xl);
   margin-bottom: var(--space-2xl);
@@ -22,10 +21,10 @@
 }
 
 .footer {
-  background: var(--color-navy-deep);
-  color: rgba(255,255,255,.5);
-  padding: var(--space-lg) var(--space-md);
+  border-top: 1px solid var(--color-rule);
+  padding: var(--space-lg);
   text-align: center;
   font-size: var(--text-xs);
-  letter-spacing: .5px;
+  color: var(--color-muted);
+  letter-spacing: .4px;
 }

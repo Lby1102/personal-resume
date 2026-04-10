@@ -1,32 +1,37 @@
 /* ================================================
-   Component: Tags & simple lists
-   Covers: .tag-row, .tag, .tag-list
+   Component: Tags & Lists
 ================================================ */
 
-/* Inline chip tags (e.g. Interests) */
-.tag-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-sm);
-}
+/* Interest chips — navy + gold border, sharp corners */
+.tag-row { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 
 .tag {
-  background: var(--color-primary-light);
-  color: var(--color-primary);
-  border-radius: 99px;
-  padding: var(--space-xs) 14px;
-  font-size: .82rem;
-  font-weight: 500;
+  background: transparent;
+  color: var(--color-navy);
+  border: 1px solid var(--color-gold);
+  border-radius: 0;
+  padding: 4px 14px;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
 }
 
-/* Vertical plain list (e.g. Languages) */
-.tag-list {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
+/* Language list */
+.tag-list { display: flex; flex-direction: column; gap: 6px; }
 
 .tag-list li {
   font-size: var(--text-sm);
-  color: #334155;
+  color: var(--color-text);
+  padding-left: 12px;
+  position: relative;
+}
+
+.tag-list li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--color-gold);
+  font-size: .7rem;
+  top: 2px;
 }

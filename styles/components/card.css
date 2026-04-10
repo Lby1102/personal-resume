@@ -1,24 +1,25 @@
 /* ================================================
    Component: Card + Section Title
-   Covers: .card, .section-title
 ================================================ */
 
 .card {
   background: var(--color-card);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius);
+  border-radius: var(--radius);   /* 0 — sharp, formal */
+  border-top: 3px solid var(--color-gold);   /* gold top accent */
   padding: var(--space-lg);
   box-shadow: var(--shadow);
   margin-bottom: var(--space-md);
 }
 
 .section-title {
-  font-size: var(--text-xs);
+  font-family: var(--font-serif);
+  font-size: var(--text-lg);
   font-weight: 700;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
-  color: var(--color-primary);
+  color: var(--color-navy);
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-sm);
-  border-bottom: 2px solid var(--color-primary-light);
+  /* Gold underline instead of blue */
+  border-bottom: 2px solid var(--color-gold);
+  letter-spacing: .3px;
 }

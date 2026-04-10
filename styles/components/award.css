@@ -1,27 +1,30 @@
 /* ================================================
    Component: Award List
-   Covers: .award-list, .award-name, .award-date
 ================================================ */
 
-.award-list {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-sm);
-}
+.award-list { display: flex; flex-direction: column; gap: 10px; }
 
 .award-list li {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   font-size: var(--text-base);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
 }
 
+.award-list li:last-child { border-bottom: none; padding-bottom: 0; }
+
 .award-name {
-  font-weight: 500;
+  font-family: var(--font-serif);
+  font-weight: 400;
+  color: var(--color-navy);
 }
 
 .award-date {
-  color: var(--color-muted);
+  color: var(--color-gold);
   font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: .4px;
   white-space: nowrap;
 }

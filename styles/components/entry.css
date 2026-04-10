@@ -1,17 +1,9 @@
 /* ================================================
-   Component: Entry
-   Used for Education and Experience items
-   Covers: .entry, .entry-header, .entry-title,
-           .entry-date, .entry-sub, .entry-desc
+   Component: Entry  (Education / Experience)
 ================================================ */
 
-.entry {
-  margin-bottom: var(--space-md);
-}
-
-.entry:last-child {
-  margin-bottom: 0;
-}
+.entry { margin-bottom: var(--space-md); }
+.entry:last-child { margin-bottom: 0; }
 
 .entry-header {
   display: flex;
@@ -22,13 +14,17 @@
 }
 
 .entry-title {
-  font-weight: 600;
+  font-family: var(--font-serif);
+  font-weight: 700;
   font-size: var(--text-base);
+  color: var(--color-navy);
 }
 
 .entry-date {
   font-size: var(--text-xs);
-  color: var(--color-muted);
+  color: var(--color-gold);
+  font-weight: 600;
+  letter-spacing: .4px;
   white-space: nowrap;
 }
 
@@ -46,6 +42,6 @@
 
 .entry-desc li {
   font-size: var(--text-sm);
-  color: #334155;
+  color: #333;
   margin-bottom: var(--space-xs);
 }

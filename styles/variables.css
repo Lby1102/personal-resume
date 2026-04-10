@@ -1,18 +1,27 @@
 /* ================================================
-   Design Tokens — edit here to retheme the whole site
+   Design Tokens — Nobel Prize style
+   Navy #003d8f  ×  Gold #c9a640
 ================================================ */
 :root {
-  /* Brand colors */
-  --color-primary:        #2563eb;
-  --color-primary-light:  #dbeafe;
-  --color-primary-dark:   #1e3a8a;
+  /* Brand */
+  --color-navy:        #003d8f;
+  --color-navy-dark:   #00276b;
+  --color-navy-deep:   #001a4d;
+  --color-gold:        #c9a640;
+  --color-gold-light:  #f5e9c4;
+
+  /* Aliases used by components */
+  --color-primary:       var(--color-navy);
+  --color-primary-light: var(--color-gold-light);
+  --color-primary-dark:  var(--color-navy-dark);
+  --color-accent:        var(--color-gold);
 
   /* Neutrals */
-  --color-text:           #1e293b;
-  --color-muted:          #64748b;
-  --color-border:         #e2e8f0;
-  --color-bg:             #f8fafc;
-  --color-card:           #ffffff;
+  --color-text:   #1a1a1a;
+  --color-muted:  #6b6b6b;
+  --color-border: #d9d3c7;
+  --color-bg:     #f5f3ef;   /* warm off-white, like Nobel's page bg */
+  --color-card:   #ffffff;
 
   /* Spacing scale */
   --space-xs:  4px;
@@ -21,17 +30,19 @@
   --space-lg:  24px;
   --space-xl:  32px;
   --space-2xl: 48px;
-  --space-3xl: 60px;
+  --space-3xl: 64px;
 
   /* Typography */
-  --font-sans: "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
-  --text-xs:   .75rem;
+  --font-serif: "Libre Baskerville", "Georgia", "Times New Roman", serif;
+  --font-sans:  "Inter", "PingFang SC", "Microsoft YaHei", sans-serif;
+  --text-xs:   .72rem;
   --text-sm:   .85rem;
   --text-base: .97rem;
-  --text-lg:   1.05rem;
-  --text-2xl:  2.2rem;
+  --text-lg:   1.1rem;
+  --text-xl:   1.35rem;
+  --text-2xl:  2.4rem;
 
-  /* Surfaces */
-  --radius:   12px;
-  --shadow:   0 1px 4px rgba(0, 0, 0, .08);
+  /* Surfaces — sharp corners, formal */
+  --radius: 0px;
+  --shadow: 0 2px 8px rgba(0, 0, 0, .10);
 }

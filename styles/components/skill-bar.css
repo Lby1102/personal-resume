@@ -1,31 +1,25 @@
 /* ================================================
    Component: Skill Bar
-   Covers: .skill-list, .skill-item, .skill-name,
-           .skill-bar, .skill-fill
 ================================================ */
 
-.skill-list {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
+.skill-list { display: flex; flex-direction: column; gap: 14px; }
 
 .skill-name {
   display: block;
   font-size: var(--text-sm);
-  font-weight: 500;
+  font-weight: 600;
+  color: var(--color-navy);
   margin-bottom: var(--space-xs);
+  letter-spacing: .3px;
 }
 
 .skill-bar {
-  height: 6px;
+  height: 5px;
   background: var(--color-border);
-  border-radius: 99px;
   overflow: hidden;
 }
 
 .skill-fill {
   height: 100%;
-  background: var(--color-primary);
-  border-radius: 99px;
+  background: var(--color-gold);   /* gold progress bar */
 }

@@ -21,7 +21,7 @@
     { "name": "MAT2042荣誉线性代数"},
     {"name":"AIE1902\n进行了transformer数学模型、agent搭建、fine-tuning等基础学习"},
     {"name":"Gilbert线性代数公开课"},
-    { "name": "凌青-中科大线性代数公开课" },
+    { "name": "凌青-中科大线性代数公开课" ,"url":"https://www.bilibili.com/video/BV19M411T7S7?p=20&vd_source=6c0ea56bdc42d452fb5c14e3c63c2acd"},
     {"name":"哈佛大学概率统计导论公开课","url":"https://www.bilibili.com/video/BV1xCHTeVELt?p=5&vd_source=6c0ea56bdc42d452fb5c14e3c63c2acd"}
   ],
   "experience": [

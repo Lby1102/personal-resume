@@ -23,7 +23,7 @@
 
 .avatar {
   flex: 0 0 auto;
-  width: 160px;
+  width: 60px;
   border: 1px solid var(--color-rule);
   background: #faf9f7;
   overflow: hidden;

@@ -25,13 +25,23 @@ function renderAbout(text) {
   `;
 }
 
-function renderExperience(items) {
-  const entries = items.map(exp => {
-    const bullets = (exp.bullet || []).map(b => `<li>${b}</li>`).join('');
+function renderExperience(items = []) {
+  const safeItems = Array.isArray(items) ? items : [];
+  const entries = safeItems.map(exp => {
+    const bulletSource = Array.isArray(exp?.bullet)
+      ? exp.bullet
+      : Array.isArray(exp?.bullets)
+        ? exp.bullets
+        : typeof exp?.bullet === 'string'
+          ? [exp.bullet]
+          : typeof exp?.bullets === 'string'
+            ? [exp.bullets]
+            : [];
+    const bullets = bulletSource.map(b => `<li>${b}</li>`).join('');
     return `
       <div class="entry">
         <div class="entry-header">
-          <span class="entry-title">${exp.title}</span>
+          <span class="entry-title">${exp?.title || ''}</span>
         </div>
         <ul class="entry-desc">${bullets}</ul>
       </div>
@@ -45,6 +55,7 @@ function renderExperience(items) {
     </section>
   `;
 }
+
 
 
 function renderInterests(items) {

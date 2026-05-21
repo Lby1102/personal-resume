@@ -21,14 +21,16 @@ export function renderHero(profile) {
   return `
     <div class="container">
       <div class="hero-content">
-        <div class="avatar">${avatarHTML}</div>
-        <div class="hero-text">
-          <h1>${name}</h1>
-          <p class="hero-title">${title}</p>
-          <p class="hero-student-id">学号：${studentId}</p>
-          <div class="contact-row">${contactHTML}</div>
-          <div class="hero-notes">${notesHTML}</div>
+        <div class="hero-main">
+          <div class="avatar">${avatarHTML}</div>
+          <div class="hero-text">
+            <h1>${name}</h1>
+            <p class="hero-title">${title}</p>
+            <p class="hero-student-id">学号：${studentId}</p>
+            <div class="contact-row">${contactHTML}</div>
+          </div>
         </div>
+        <div class="hero-notes">${notesHTML}</div>
       </div>
     </div>
   `;

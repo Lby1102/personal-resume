@@ -23,7 +23,8 @@
 
 .avatar {
   flex: 0 0 auto;
-  width: 60px;
+  width: 120px;
+  height: 120px;
   border: 1px solid var(--color-rule);
   background: #faf9f7;
   overflow: hidden;
@@ -31,7 +32,8 @@
 
 .avatar img {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
   display: block;
 }
 

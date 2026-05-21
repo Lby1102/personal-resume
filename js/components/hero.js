@@ -23,7 +23,7 @@ export function renderHero(profile) {
       <div class="hero-content">
         <div class="hero-main">
           <div class="avatar">${avatarHTML}</div>
-          <div class="hero-text">
+          <div class="hero-info">
             <h1>${name}</h1>
             <p class="hero-title">${title}</p>
             <p class="hero-student-id">学号：${studentId}</p>

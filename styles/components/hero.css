@@ -17,31 +17,31 @@
 
 .hero-main {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
   gap: var(--space-xl);
 }
 
 .avatar {
   flex: 0 0 auto;
-  align-self: stretch;
+  width: 160px;
   border: 1px solid var(--color-rule);
   background: #faf9f7;
   overflow: hidden;
 }
 
 .avatar img {
-  height: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
   display: block;
-  object-fit: cover;
 }
 
-.hero-text {
+.hero-info {
+  flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-.hero-text h1 {
+.hero-info h1 {
   font-size: var(--text-2xl);
   font-weight: 700;
   color: var(--color-ink);
@@ -49,7 +49,7 @@
   letter-spacing: -.5px;
 }
 
-.hero-text h1::after {
+.hero-info h1::after {
   content: '·';
   color: var(--color-gold);
   margin-left: 4px;
@@ -116,22 +116,12 @@
   margin: 0 0 var(--space-xs);
 }
 
-.hero-note:last-child {
-  margin-bottom: 0;
-}
-
 @media (max-width: 700px) {
   .hero-main {
     flex-direction: column;
-    align-items: flex-start;
   }
 
   .avatar {
-    height: auto;
-  }
-
-  .avatar img {
-    width: 160px;
-    height: auto;
+    width: 120px;
   }
 }

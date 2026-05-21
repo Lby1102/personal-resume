@@ -5,7 +5,7 @@
  * @returns {string} HTML string
  */
 export function renderHero(profile) {
-  const { name, initials, title, studentId, contact } = profile;
+  const { name, initials, title, studentId, contact, heroNotes = [] } = profile;
 
   const avatarHTML = `<img src="./profile_photo.png" alt="${name} 的头像" />`;
 
@@ -16,6 +16,7 @@ export function renderHero(profile) {
   if (contact.phone)    links.push(`<span class="contact-item"><span class="contact-label">电话</span><a href="tel:${contact.phone}" class="contact-link">${contact.phone}</a></span>`);
 
   const contactHTML = links.join('');
+  const notesHTML = heroNotes.map(note => `<p class="hero-note">${note}</p>`).join('');
 
   return `
     <div class="container">
@@ -26,6 +27,7 @@ export function renderHero(profile) {
           <p class="hero-title">${title}</p>
           <p class="hero-student-id">学号：${studentId}</p>
           <div class="contact-row">${contactHTML}</div>
+          <div class="hero-notes">${notesHTML}</div>
         </div>
       </div>
     </div>

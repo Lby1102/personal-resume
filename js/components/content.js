@@ -27,14 +27,12 @@ function renderAbout(text) {
 
 function renderExperience(items) {
   const entries = items.map(exp => {
-    const bullets = exp.bullets.map(b => `<li>${b}</li>`).join('');
+    const bullets = (exp.bullet || []).map(b => `<li>${b}</li>`).join('');
     return `
       <div class="entry">
         <div class="entry-header">
           <span class="entry-title">${exp.title}</span>
-          <span class="entry-date">${exp.start} — ${exp.end}</span>
         </div>
-        <p class="entry-sub">${exp.role} · ${exp.org}</p>
         <ul class="entry-desc">${bullets}</ul>
       </div>
     `;

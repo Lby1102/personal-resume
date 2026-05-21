@@ -99,6 +99,17 @@
   padding-bottom: 1px;
 }
 
+.hero-notes {
+  margin-top: var(--space-md);
+}
+
+.hero-note {
+  font-size: var(--text-sm);
+  color: #444;
+  line-height: 1.7;
+  margin: 0 0 var(--space-xs);
+}
+
 .contact-link:hover {
   text-decoration: none;
   border-color: var(--color-ink);

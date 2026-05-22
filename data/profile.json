@@ -1,7 +1,7 @@
 {
   "name": "刘博远",
   "initials": "LBY",
-  "title": "SAI 2025 级",
+  "title": "SAI 2025 级本科生",
   "studentId": "125090408",
   "contact": {
     "email": "125090408@link.cuhk.edu.cn",
@@ -11,7 +11,7 @@
   },
   "heroNotes": [
     "毕业于衡水中学数学奥赛班，有一定的自学能力和抗压力。",
-    "有一定的 meta 学习能力，虽然现阶段掌握知识很少，但是可以在压力环境下快速成长。"
+    "有一定的 meta 学习能力。虽然现阶段掌握知识很少，但是可以在压力环境下快速成长。"
   ],
   "about": [
     "中学：河北衡水中学(2022-2025)",
@@ -25,11 +25,11 @@
     { "name": "MAT1011荣誉微积分pureA"},
     { "name": "MAT1012荣誉微积分(预计pureA)"},
     { "name": "MAT2042荣誉线性代数(预计pureA)"},
-    {"name":"AIE1902\n进行了transformer数学模型、agent搭建、LoRA fine-tuning等基础学习"},
-    {"name":"以下均为自学课程"},
-    {"name":"Gilbert线性代数公开课" , "url":"https://www.bilibili.com/video/BV18K4y1R7MP?vd_source=6c0ea56bdc42d452fb5c14e3c63c2acd"},
+    { "name":"AIE1902\n进行了transformer数学模型、agent架构、LoRA fine-tuning等基础学习"},
+    { "name":"以下均为自学课程"},
+    { "name":"Gilbert线性代数公开课" , "url":"https://www.bilibili.com/video/BV18K4y1R7MP?vd_source=6c0ea56bdc42d452fb5c14e3c63c2acd"},
     { "name": "凌青-中科大凸优化公开课" ,"url":"https://www.bilibili.com/video/BV19M411T7S7?p=20&vd_source=6c0ea56bdc42d452fb5c14e3c63c2acd"},
-    {"name":"哈佛大学概率统计导论公开课","url":"https://www.bilibili.com/video/BV1xCHTeVELt?p=5&vd_source=6c0ea56bdc42d452fb5c14e3c63c2acd"}
+    { "name":"哈佛大学概率统计导论公开课","url":"https://www.bilibili.com/video/BV1xCHTeVELt?p=5&vd_source=6c0ea56bdc42d452fb5c14e3c63c2acd"}
   ],
   "experience": [
     {

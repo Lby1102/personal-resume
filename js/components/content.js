@@ -37,7 +37,16 @@ function renderExperience(items = []) {
           : typeof exp?.bullets === 'string'
             ? [exp.bullets]
             : [];
-    const bullets = bulletSource.map(b => `<li>${b}</li>`).join('');
+
+    const bullets = bulletSource.map(b => {
+      // 将 "GitHub URL:https://..." 转换成可点击链接
+      const linkified = b.replace(
+        /(GitHub URL:)(https?:\/\/[^\s]+)/gi,
+        '$1<a href="$2" target="_blank" rel="noopener" class="inline-link">$2</a>'
+      );
+      return `<li>${linkified}</li>`;
+    }).join('');
+
     return `
       <div class="entry">
         <div class="entry-header">

@@ -42,7 +42,8 @@
       "title": "LoRA 微调 Qwen 与 CNN 处理噪声图像识别对比",
       "bullet": [
         "数据爬取和清洗",
-        "使用 LoRA 方法微调 Qwen 模型"
+        "使用 LoRA 方法微调 Qwen 模型",
+        "GitHub URL:https://github.com/Lby1102/AIE1902.git"
       ]
     },
     {

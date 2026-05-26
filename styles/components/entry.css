@@ -44,3 +44,14 @@
   color: #444;
   margin-bottom: var(--space-xs);
 }
+
+.entry-desc .inline-link {
+  color: var(--color-ink);
+  border-bottom: 1px solid #ddd;
+  text-decoration: none;
+  transition: border-color 0.2s;
+}
+
+.entry-desc .inline-link:hover {
+  border-color: var(--color-ink);
+}
